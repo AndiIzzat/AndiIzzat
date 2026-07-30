@@ -2,7 +2,7 @@
 
 ![IZZAT SHAFRAN](https://raw.githubusercontent.com/iashari/iashari/main/ascii-name.svg)
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&random=false&width=500&lines=Full+Stack+Developer;UI%2FUX+Enthusiast;Building+something+cool..." alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=DF6720&center=true&vCenter=true&random=false&width=500&lines=Full+Stack+Developer;UI%2FUX+Enthusiast;Building+something+cool..." alt="Typing SVG" /></a>
 
 **Full Stack Developer Intern** @ Ashari Tech | Makassar, Indonesia
 
@@ -26,7 +26,7 @@
     "music": ["Lo-fi", "Jazz", "Indie"],
     "movies": ["Sci-fi", "Action", "Documentary"]
   },
-  "current_focus": "Building something cool..."
+  "current_focus": "Shipping the Ashari.Tech redesign — Next.js 16, GSAP, motion"
 }
 ```
 
@@ -34,14 +34,33 @@
 
 ### Tech Stack
 
-![Next.js](https://img.shields.io/badge/Next.js-0a0a0a?style=for-the-badge&logo=next.js&logoColor=ffffff)
-![React](https://img.shields.io/badge/React-0a0a0a?style=for-the-badge&logo=react&logoColor=a3a3a3)
-![TypeScript](https://img.shields.io/badge/TypeScript-0a0a0a?style=for-the-badge&logo=typescript&logoColor=a3a3a3)
-![Tailwind](https://img.shields.io/badge/Tailwind-0a0a0a?style=for-the-badge&logo=tailwindcss&logoColor=a3a3a3)
-![Node.js](https://img.shields.io/badge/Node.js-0a0a0a?style=for-the-badge&logo=node.js&logoColor=a3a3a3)
-![MongoDB](https://img.shields.io/badge/MongoDB-0a0a0a?style=for-the-badge&logo=mongodb&logoColor=a3a3a3)
-![Figma](https://img.shields.io/badge/Figma-0a0a0a?style=for-the-badge&logo=figma&logoColor=a3a3a3)
-![Vercel](https://img.shields.io/badge/Vercel-0a0a0a?style=for-the-badge&logo=vercel&logoColor=ffffff)
+![Next.js](https://img.shields.io/badge/Next.js-0a0a0a?style=for-the-badge&logo=next.js&logoColor=DF6720)
+![React](https://img.shields.io/badge/React-0a0a0a?style=for-the-badge&logo=react&logoColor=DF6720)
+![TypeScript](https://img.shields.io/badge/TypeScript-0a0a0a?style=for-the-badge&logo=typescript&logoColor=DF6720)
+![Tailwind](https://img.shields.io/badge/Tailwind-0a0a0a?style=for-the-badge&logo=tailwindcss&logoColor=DF6720)
+![Node.js](https://img.shields.io/badge/Node.js-0a0a0a?style=for-the-badge&logo=node.js&logoColor=DF6720)
+![MongoDB](https://img.shields.io/badge/MongoDB-0a0a0a?style=for-the-badge&logo=mongodb&logoColor=DF6720)
+![GSAP](https://img.shields.io/badge/GSAP-0a0a0a?style=for-the-badge&logo=greensock&logoColor=DF6720)
+![Motion](https://img.shields.io/badge/Motion-0a0a0a?style=for-the-badge&logo=framer&logoColor=DF6720)
+![Figma](https://img.shields.io/badge/Figma-0a0a0a?style=for-the-badge&logo=figma&logoColor=DF6720)
+![Vercel](https://img.shields.io/badge/Vercel-0a0a0a?style=for-the-badge&logo=vercel&logoColor=DF6720)
+
+---
+
+### Stats
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=iashari&show_icons=true&hide_border=true&bg_color=00000000&title_color=DF6720&text_color=a3a3a3&icon_color=DF6720&include_all_commits=true&rank_icon=github" alt="GitHub stats" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iashari&layout=compact&langs_count=6&hide_border=true&bg_color=00000000&title_color=DF6720&text_color=a3a3a3" alt="Top languages" />
+
+</div>
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=iashari&bg_color=00000000&color=DF6720&line=DF6720&point=FF9A5A&area_color=DF6720&area=true&hide_border=true&custom_title=Contribution%20Activity" alt="Activity graph" width="98%" />
+
+</div>
 
 ---
 
@@ -49,26 +68,69 @@
 
 <div align="center">
 
-[![Trophies](https://github-trophies.vercel.app/?username=iashari&theme=radical&no-frame=true&no-bg=true&column=8&margin-w=10&margin-h=10)](https://github.com/iashari)
+[![Trophies](https://github-profile-trophy.vercel.app/?username=iashari&theme=gruvbox&no-frame=true&no-bg=true&column=8&margin-w=10&margin-h=10)](https://github.com/iashari)
 
 </div>
 
 ---
 
-### Featured Project
+### Featured Projects
 
 <table width="100%">
 <tr>
-<td>
+<td width="50%" valign="top">
+
+**Ashari.Tech — Company Redesign**
+
+Company profile site for an Indonesian AI solutions agency. Bento grid layout, glassmorphism, GSAP scroll work.
+
+![Next.js](https://img.shields.io/badge/Next.js_16-0a0a0a?style=for-the-badge&logo=next.js&logoColor=DF6720)
+![React](https://img.shields.io/badge/React_19-0a0a0a?style=for-the-badge&logo=react&logoColor=DF6720)
+![GSAP](https://img.shields.io/badge/GSAP-0a0a0a?style=for-the-badge&logo=greensock&logoColor=DF6720)
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-DF6720?style=for-the-badge&logo=vercel&logoColor=0a0a0a)](https://ashari.tech)
+[![Source Code](https://img.shields.io/badge/Source-0a0a0a?style=for-the-badge&logo=github&logoColor=DF6720)](https://github.com/iashari/Ashari-Tech-Web-Redesign)
+
+</td>
+<td width="50%" valign="top">
 
 **Portfolio Website**
 
-![Next.js](https://img.shields.io/badge/Next.js-0a0a0a?style=for-the-badge&logo=next.js&logoColor=ffffff)
-![TypeScript](https://img.shields.io/badge/TypeScript-0a0a0a?style=for-the-badge&logo=typescript&logoColor=a3a3a3)
-![Tailwind](https://img.shields.io/badge/Tailwind-0a0a0a?style=for-the-badge&logo=tailwindcss&logoColor=a3a3a3)
+My personal portfolio — minimal, dark, motion-led. Built during my internship at Ashari Tech.
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-0a0a0a?style=for-the-badge&logo=vercel&logoColor=ffffff)](https://izzatshafran.vercel.app/)
-[![Source Code](https://img.shields.io/badge/Source_Code-0a0a0a?style=for-the-badge&logo=github&logoColor=a3a3a3)](https://github.com/iashari/Andi-Izzat-Shafran-ashari-Portofolio26)
+![Next.js](https://img.shields.io/badge/Next.js-0a0a0a?style=for-the-badge&logo=next.js&logoColor=DF6720)
+![TypeScript](https://img.shields.io/badge/TypeScript-0a0a0a?style=for-the-badge&logo=typescript&logoColor=DF6720)
+![Tailwind](https://img.shields.io/badge/Tailwind-0a0a0a?style=for-the-badge&logo=tailwindcss&logoColor=DF6720)
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-DF6720?style=for-the-badge&logo=vercel&logoColor=0a0a0a)](https://izzatshafran.vercel.app/)
+[![Source Code](https://img.shields.io/badge/Source-0a0a0a?style=for-the-badge&logo=github&logoColor=DF6720)](https://github.com/iashari/Andi-Izzat-Shafran-ashari-Portofolio26)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**AI Editor Website**
+
+Web-based AI editing interface — experimenting with LLM-driven editing flows in the browser.
+
+![TypeScript](https://img.shields.io/badge/TypeScript-0a0a0a?style=for-the-badge&logo=typescript&logoColor=DF6720)
+![Next.js](https://img.shields.io/badge/Next.js-0a0a0a?style=for-the-badge&logo=next.js&logoColor=DF6720)
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-DF6720?style=for-the-badge&logo=vercel&logoColor=0a0a0a)](https://aieditorwebsite.vercel.app)
+[![Source Code](https://img.shields.io/badge/Source-0a0a0a?style=for-the-badge&logo=github&logoColor=DF6720)](https://github.com/iashari/Ai-Editor-Website)
+
+</td>
+<td width="50%" valign="top">
+
+**Chat Bot App**
+
+A chat bot interface built to explore conversational UI patterns and streaming responses.
+
+![JavaScript](https://img.shields.io/badge/JavaScript-0a0a0a?style=for-the-badge&logo=javascript&logoColor=DF6720)
+![Node.js](https://img.shields.io/badge/Node.js-0a0a0a?style=for-the-badge&logo=node.js&logoColor=DF6720)
+
+[![Source Code](https://img.shields.io/badge/Source-0a0a0a?style=for-the-badge&logo=github&logoColor=DF6720)](https://github.com/iashari/Chat-Bot-App-Test)
 
 </td>
 </tr>
@@ -104,9 +166,9 @@
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0a0a0a?style=for-the-badge&logo=linkedin&logoColor=a3a3a3)](https://www.linkedin.com/in/andi-izzat-7329b630a/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-0a0a0a?style=for-the-badge&logo=vercel&logoColor=ffffff)](https://izzatshafran.vercel.app/)
-[![Instagram](https://img.shields.io/badge/Instagram-0a0a0a?style=for-the-badge&logo=instagram&logoColor=a3a3a3)](https://www.instagram.com/izzat.shafran/)
-[![Email](https://img.shields.io/badge/Email-0a0a0a?style=for-the-badge&logo=gmail&logoColor=a3a3a3)](mailto:ifran@ashari.tech)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0a0a0a?style=for-the-badge&logo=linkedin&logoColor=DF6720)](https://www.linkedin.com/in/andi-izzat-7329b630a/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-DF6720?style=for-the-badge&logo=vercel&logoColor=0a0a0a)](https://izzatshafran.vercel.app/)
+[![Instagram](https://img.shields.io/badge/Instagram-0a0a0a?style=for-the-badge&logo=instagram&logoColor=DF6720)](https://www.instagram.com/izzat.shafran/)
+[![Email](https://img.shields.io/badge/Email-0a0a0a?style=for-the-badge&logo=gmail&logoColor=DF6720)](mailto:ifran@ashari.tech)
 
 </div>

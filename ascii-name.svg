@@ -10,7 +10,7 @@
 					text-align: center;
 					display: flex;
 					justify-content: center;
-					background: linear-gradient(90deg, #FF4500, #FE428E, #FF6347);
+					background: linear-gradient(90deg, #B54A12, #DF6720, #FF9A5A, #DF6720);
 					-webkit-background-clip: text;
 					-webkit-text-fill-color: transparent;
 					background-clip: text;
