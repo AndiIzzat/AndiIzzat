@@ -51,8 +51,7 @@
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=iashari&show_icons=true&hide_border=true&bg_color=00000000&title_color=DF6720&text_color=a3a3a3&icon_color=DF6720&include_all_commits=true&rank_icon=github" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iashari&layout=compact&langs_count=6&hide_border=true&bg_color=00000000&title_color=DF6720&text_color=a3a3a3" alt="Top languages" />
+<img height="180" src="https://streak-stats.demolab.com/?user=iashari&hide_border=true&background=00000000&ring=DF6720&fire=DF6720&currStreakNum=DF6720&currStreakLabel=DF6720&sideNums=a3a3a3&sideLabels=a3a3a3&dates=a3a3a3&stroke=DF6720" alt="Contribution streak" />
 
 </div>
 
@@ -68,7 +67,7 @@
 
 <div align="center">
 
-[![Trophies](https://github-profile-trophy.vercel.app/?username=iashari&theme=gruvbox&no-frame=true&no-bg=true&column=8&margin-w=10&margin-h=10)](https://github.com/iashari)
+[![Trophies](https://github-trophies.vercel.app/?username=iashari&theme=gruvbox&no-frame=true&no-bg=true&column=8&margin-w=10&margin-h=10)](https://github.com/iashari)
 
 </div>
 
