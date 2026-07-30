@@ -16,6 +16,10 @@ im = Image.open(SRC).convert("RGB")
 W, H = im.size
 
 PAD = 5
+# Label boxes are authored against a 1080px-wide export and scaled to whatever
+# resolution the source actually is, so a 2x/3x re-export needs no re-measuring.
+REF_W = 1080
+SCALE = W / REF_W
 # (name, x0, y0, x1, y1, patch_source_dx, fade_in_start_seconds)
 LABELS = [
     ("ui/ux",     394, 155, 431, 170,  140, 0.4),
@@ -23,10 +27,16 @@ LABELS = [
     ("prototype", 835, 238, 908, 253, -150, 1.4),
     ("code",      581, 552, 623, 567,  150, 1.9),
 ]
+if SCALE != 1:
+    print(f"source is {SCALE:g}x the {REF_W}px reference - scaling label boxes")
+
+def s(v):
+    return int(round(v * SCALE))
 
 boxes = []
 for name, x0, y0, x1, y1, dx, t in LABELS:
-    boxes.append((name, x0 - PAD, y0 - PAD, x1 + PAD + 1, y1 + PAD + 1, dx, t))
+    boxes.append((name, s(x0) - PAD, s(y0) - PAD, s(x1) + PAD + 1,
+                  s(y1) + PAD + 1, s(dx), t))
 
 # 1. Original label tiles (before we damage the plate).
 tiles = []
@@ -70,7 +80,10 @@ plate.save(r"C:\Users\andii\Documents\iashari-profile\_build\plate_check.png")
 
 # 3. Encode plate as JPEG (smooth gradient photo -> JPEG beats PNG hugely).
 buf = io.BytesIO()
-plate.save(buf, format="JPEG", quality=86, optimize=True, progressive=True)
+# 4:4:4 (subsampling=0) matters here: the wordmark is thin light strokes on a
+# dark gradient, and default 4:2:0 chroma halving fringes exactly that.
+plate.save(buf, format="JPEG", quality=96, subsampling=0, optimize=True,
+           progressive=True)
 plate_b64 = base64.b64encode(buf.getvalue()).decode()
 print(f"plate jpeg: {len(buf.getvalue())/1024:.0f} KB")
 
