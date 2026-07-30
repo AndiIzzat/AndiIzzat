@@ -2,14 +2,6 @@
 
 <img src="https://raw.githubusercontent.com/iashari/iashari/main/banner.png" alt="Izzat Shafran — design, motion, ui/ux, codes" width="100%" />
 
-![IZZAT SHAFRAN](https://raw.githubusercontent.com/iashari/iashari/main/ascii-name.svg)
-
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=DF6720&center=true&vCenter=true&random=false&width=500&lines=Full+Stack+Developer;UI%2FUX+Enthusiast;Building+something+cool..." alt="Typing SVG" /></a>
-
-**Full Stack Developer Intern** @ Ashari Tech | Makassar, Indonesia
-
-*Bridging design and development with clean, minimal aesthetics*
-
 </div>
 
 ---
