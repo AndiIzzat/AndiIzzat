@@ -8,8 +8,6 @@
 
 ### About
 
-<img align="right" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Cat.png" alt="Cat" width="120" />
-
 ```json
 {
   "pronouns": ["he", "him"],
