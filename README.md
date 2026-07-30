@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/iashari/iashari/main/banner.png" alt="Izzat Shafran — design, motion, ui/ux, codes" width="100%" />
+<img src="https://raw.githubusercontent.com/iashari/iashari/main/banner.svg" alt="Izzat Shafran — ui/ux, visual, prototype, code" width="100%" />
 
 </div>
 
