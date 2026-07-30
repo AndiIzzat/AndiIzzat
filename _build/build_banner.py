@@ -50,6 +50,53 @@ for name, x0, y0, x1, y1, dx, t in boxes:
 #    edges exactly, so smooth gradients reconstruct seamlessly.
 import numpy as np
 
+
+def relax(ch, hole, iters):
+    """Jacobi sweeps on the hole interior; boundary ring stays fixed."""
+    for _ in range(iters):
+        nb = np.zeros_like(ch)
+        nb[1:-1, 1:-1] = (
+            ch[:-2, 1:-1] + ch[2:, 1:-1] + ch[1:-1, :-2] + ch[1:-1, 2:]
+        ) / 4.0
+        ch[hole] = nb[hole]
+    return ch
+
+
+def inpaint(region, hole):
+    """Multigrid Laplace solve.
+
+    Plain Jacobi needs O(n^2) sweeps to propagate boundary information across
+    an n-wide hole, so a fixed sweep count that converged at 1080px leaves a
+    flat blotch once the export is 3x larger. Solving coarse-to-fine carries
+    the low-frequency part cheaply and only refines locally at full scale.
+    """
+    hh, ww = hole.shape
+    levels = []
+    cur_r, cur_h = region, hole
+    while min(cur_r.shape[0], cur_r.shape[1]) > 12:
+        levels.append((cur_r, cur_h))
+        cur_r = cur_r[::2, ::2].copy()
+        cur_h = cur_h[::2, ::2].copy()
+    levels.append((cur_r, cur_h))
+
+    coarse_r, coarse_h = levels[-1]
+    seed = coarse_r[~coarse_h].mean()
+    coarse_r[coarse_h] = seed
+    relax(coarse_r, coarse_h, 4000)
+
+    prev = coarse_r
+    for lvl in range(len(levels) - 2, -1, -1):
+        fine_r, fine_h = levels[lvl]
+        up = np.asarray(
+            Image.fromarray(prev.astype(np.float32), "F").resize(
+                (fine_r.shape[1], fine_r.shape[0]), Image.BILINEAR)
+        ).astype(np.float64)
+        fine_r[fine_h] = up[fine_h]
+        relax(fine_r, fine_h, 600)
+        prev = fine_r
+    return prev
+
+
 arr = np.asarray(im).astype(np.float64)
 for name, x0, y0, x1, y1, dx, t in boxes:
     r = 2  # boundary ring thickness
@@ -59,19 +106,8 @@ for name, x0, y0, x1, y1, dx, t in boxes:
     hh, ww, _ = region.shape
     hole = np.zeros((hh, ww), dtype=bool)
     hole[r:hh - r, r:ww - r] = True
-
     for c in range(3):
-        ch = region[:, :, c]
-        # seed the hole with the mean of its boundary ring
-        ring = ch[~hole]
-        ch[hole] = ring.mean()
-        for _ in range(1500):
-            nb = np.zeros_like(ch)
-            nb[1:-1, 1:-1] = (
-                ch[:-2, 1:-1] + ch[2:, 1:-1] + ch[1:-1, :-2] + ch[1:-1, 2:]
-            ) / 4.0
-            ch[hole] = nb[hole]
-        region[:, :, c] = ch
+        region[:, :, c] = inpaint(region[:, :, c].copy(), hole)
     arr[sy0:sy1, sx0:sx1] = region
 
 plate = Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8), "RGB")
@@ -82,7 +118,7 @@ plate.save(r"C:\Users\andii\Documents\iashari-profile\_build\plate_check.png")
 buf = io.BytesIO()
 # 4:4:4 (subsampling=0) matters here: the wordmark is thin light strokes on a
 # dark gradient, and default 4:2:0 chroma halving fringes exactly that.
-plate.save(buf, format="JPEG", quality=96, subsampling=0, optimize=True,
+plate.save(buf, format="JPEG", quality=94, subsampling=0, optimize=True,
            progressive=True)
 plate_b64 = base64.b64encode(buf.getvalue()).decode()
 print(f"plate jpeg: {len(buf.getvalue())/1024:.0f} KB")
